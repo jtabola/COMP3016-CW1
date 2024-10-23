@@ -68,6 +68,38 @@ Make sure you have the necessary environment, libraries, and resources set up be
 
 ## **Game Programming Patterns Used**
 
+## 1. Game Loop Pattern
+The `gameLoop` function embodies the classic game loop pattern, where the game continually processes input, updates game state, and renders the game until a termination condition (like the player losing all health) is met.
+
+## 2. State Management
+The code manages different states of the game, such as the main menu, the shop, and different levels. The `showMainMenu`, `showShopMenu`, and `transitionToNextLevel` functions serve to change states. Each function encapsulates behavior related to that specific state, making it easier to manage transitions and logic specific to each phase of the game.
+
+## 3. Partial Entity-Component System (ECS)
+The code partially follows a simplified version of ECS with a `Player` class that encapsulates attributes and behaviors (like position and health). This separation of concerns helps in managing entities and their properties cleanly. The `Player` class contains all data related to the player and methods that operate on that data.
+
+## 4. Data-Driven Design
+The game utilises external data files (`player_data.txt`, `map.txt`, etc.) to load player data and map configurations, following the data-driven design pattern. This allows me to separate game data from game logic, making it easier to modify the game without altering the source code.
+
+## 5. Input Handling
+The use of `_getch()` for input management captures player input directly from the keyboard, allowing for immediate response. The handling of input in the `showMainMenu` and `gameLoop` functions demonstrates a simple state-based input handling mechanism where different inputs trigger different game actions depending on the current state.
+
+## 6. Singleton Pattern
+The Player object is defined globally, as a single instance. This can ensure that there’s a single source for player state and behavior.
+
+## 7. Encapsulation
+The `Player` class encapsulates player-related data and functionality, allowing to manage health, position, and player interactions through methods. This encapsulation enhances code maintainability and clarity, making it easier to understand how the player behaves and interacts with the game world.
+
+## 8. Random Movement Logic
+The `moveEnemies` function implements simple AI behavior for enemies by randomly choosing directions. This randomness introduces an element of unpredictability, which can make gameplay more engaging.
+
+## 9. Collision Detection
+Functions like `isPlayerHit`, `movePlayer`, and the checks within `gameLoop` handle collision detection. These methods determine when the player interacts with enemies, collects items, or hits boundaries, forming the foundation of game mechanics related to movement and interaction.
+
+## 10. Action Listeners/Callbacks
+Functions such as `activateButton` demonstrate a form of action listeners, where specific game events (like stepping on a button) trigger corresponding actions in the game world.
+
+## 11. Resource Management
+The code manages resources (such as player health, currency, and map data) through functions that load and save to files. This allows the game state to persist between sessions, which is crucial for maintaining player progress.
 
 ---
 
