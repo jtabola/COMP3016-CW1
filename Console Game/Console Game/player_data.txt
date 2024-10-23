@@ -1,0 +1,4 @@
+currency: 100
+health: 3
+mapLevelUnlocked: 1
+wasLevel4Purchased: 0
