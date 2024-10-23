@@ -28,8 +28,26 @@ This video provides an overview of the project, including:
 ---
 
 ## **Dependencies**
+This project was developed using the following tools and libraries:
 
+- **Coding Environment**: Visual Studio 2022
+- **C++ Standard Libraries**:
+  - `#include <iostream>`: For input and output stream operations.
+  - `#include <fstream>`: For file handling.
+  - `#include <string>`: For using string data type.
+  - `#include <vector>`: For using dynamic arrays.
+  - `#include <conio.h>`: For console input/output functions (like `getch()`).
+  - `#include <cstdlib>`: For general purpose functions (e.g., memory allocation, random number generation).
+  - `#include <ctime>`: For working with date and time functions.
 
+## **Resources**
+- **Map Files**:
+  - `map.txt`: First level of the game.
+  - `map2.txt`: Second level of the game.
+  - `map3.txt`: Third level of the game.
+  - `map4.txt`: Fourth level of the game that the player can access after completing all the previous levels and buying it from the shop.
+
+Make sure you have the necessary environment, libraries, and resources set up before running the project.
 
 ---
 
