@@ -3,7 +3,7 @@
 ## **Table of Contents**
 - [Project Overview](#project-overview)
 - [Video Walkthrough](#video-walkthrough)
-- [Dependencies & Resources](#dependencies-&-resources)
+- [Dependencies & Resources](#dependencies-and-resources)
 - [Game Programming Patterns Used](#game-programming-patterns-used)
 - [Game Mechanics](#game-mechanics)
 - [UML Design Diagram](#uml-design-diagram)
@@ -14,7 +14,22 @@
 ---
 
 ## **Project Overview**
+This project is a **rogue-like game** that features multiple levels with increasing difficulty, providing players with a relatively challenging experience that feels progressive.
 
+### Key Features:
+- **Multiple Levels**: Players will navigate through a various levels, each with its unique layout and challenges, ensuring that gameplay remains fresh.
+  
+- **Increasing Difficulty**: As players progress through the game, they will encounter increasingly difficult enemies and obstacles, requiring them to adapt and develop their strategies to survive.
+
+- **Increasing Number of Enemies**: The game introduces an increasing number of enemies that move randomly throughout the levels. This adds to the unpredictability and challenge, forcing players to stay alert.
+
+- **Permanent Data Storage**: Player data is stored permanently in a file, allowing for seamless progress tracking. This means that players can return to the game later and pick up right where they left off, without losing their progress.
+
+- **Sense of Progress**: The game is designed to instill a sense of progress in players, as they advance through levels and collect coins, they can obtain extra health upgrades and unlock a new map.
+
+- **Puzzle Elements**: The game features slight puzzle mechanics, including a button that opens walls. This adds an extra layer of challenge, requiring players to think and figure out where to go before they navigate through levels.
+
+Overall, the aim of the game was to be simple and quick yet fun, providing a satisfying sense of progression as players overcome challenges and unlock new features. This design choice ensures that players feel rewarded for their efforts without being overwhelmed and spending long time on trying to progress.
 
 ---
 
@@ -27,7 +42,7 @@ This video provides an overview of the project, including:
 
 ---
 
-## **Dependencies & Resources**
+## **Dependencies and Resources**
 This project was developed using the following tools and libraries:
 
 - **Coding Environment**: Visual Studio 2022
