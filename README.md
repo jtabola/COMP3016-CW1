@@ -4,6 +4,7 @@
 - [Project Overview](#project-overview)
 - [Video Walkthrough](#video-walkthrough)
 - [Dependencies](#dependencies)
+- [Resources](#resources)
 - [Game Programming Patterns Used](#game-programming-patterns-used)
 - [Game Mechanics](#game-mechanics)
 - [UML Design Diagram](#uml-design-diagram)
@@ -46,6 +47,7 @@ This project was developed using the following tools and libraries:
   - `map2.txt`: Second level of the game.
   - `map3.txt`: Third level of the game.
   - `map4.txt`: Fourth level of the game that the player can access after completing all the previous levels and buying it from the shop.
+  - `player_data.txt`: Player's information that should be automatically generated with default values at game start.
 
 Make sure you have the necessary environment, libraries, and resources set up before running the project.
 
