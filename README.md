@@ -3,8 +3,7 @@
 ## **Table of Contents**
 - [Project Overview](#project-overview)
 - [Video Walkthrough](#video-walkthrough)
-- [Dependencies](#dependencies)
-- [Resources](#resources)
+- [Dependencies & Resources](#dependencies-&-resources)
 - [Game Programming Patterns Used](#game-programming-patterns-used)
 - [Game Mechanics](#game-mechanics)
 - [UML Design Diagram](#uml-design-diagram)
@@ -28,7 +27,7 @@ This video provides an overview of the project, including:
 
 ---
 
-## **Dependencies**
+## **Dependencies & Resources**
 This project was developed using the following tools and libraries:
 
 - **Coding Environment**: Visual Studio 2022
@@ -41,7 +40,6 @@ This project was developed using the following tools and libraries:
   - `#include <cstdlib>`: For general purpose functions (e.g., memory allocation, random number generation).
   - `#include <ctime>`: For working with date and time functions.
 
-## **Resources**
 - **Map Files**:
   - `map.txt`: First level of the game.
   - `map2.txt`: Second level of the game.
