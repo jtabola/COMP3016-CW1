@@ -145,6 +145,9 @@ The code manages resources (such as player health, currency, and map data) throu
 
 ## **UML Design Diagram**
 
+Below is a simple sequence diagram illustrating the flow of the game:
+
+![Game Sequence Diagram](./sequence%20diagram.png)
 
 ---
 
