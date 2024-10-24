@@ -135,11 +135,11 @@ The code manages resources (such as player health, currency, and map data) throu
 
 ## 8. Shopping System
 - **Mechanic**: The player can purchase upgrades in the form of extra health using in-game currency at the shop. They can also unlock a new bonus stage and progress further into the game.
-- **Implementation**: The shop is implemented in the `showShopMenu()` function, where players can spend currency and improve their attributes.
+- **Implementation**: The shop is implemented in the `showShopMenu` function, where players can spend currency and improve their attributes.
 
 ## 9. Event Triggers
 - **Mechanic**: Buttons in the game can trigger events like unlocking areas or transporting the player to a new map. 
-- **Implementation**: The `activateButton()` function handles button-triggered events in the game, which unlock new areas of the map. The `transitionToNextLevel` function handles triggering a map change when the player steps on the exit tile.
+- **Implementation**: The `activateButton` function handles button-triggered events in the game, which unlock new areas of the map. The `transitionToNextLevel` function handles triggering a map change when the player steps on the exit tile.
 
 ---
 
