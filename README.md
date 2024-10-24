@@ -105,6 +105,41 @@ The code manages resources (such as player health, currency, and map data) throu
 
 ## **Game Mechanics**
 
+## 1. Player Movement
+- **Mechanic**: The player can move in various directions (up, down, left right) across a map.
+- **Implementation**: The `movePlayer` function handles player movement, checking for collisions and boundries.
+
+## 2. Enemy AI
+- **Mechanic**: Enemies move randomly on the game map, creating a dynamic and unpredicatable environment for the player to navigate.
+- **Implementation**: The `moveEnemies` function randomly generates movement directions for enemies, adding a challenge for the player to avoid or confront.
+
+## 3. Health Management / Damage System
+- **Mechanic**: The player has a health syustem. Colliding with enemies reduces health, and once health reaches zero, the player dies and thus the game ends, sending the user back to the main menu.
+- **Implementation**: Health is managed within the `Player` class, with functions like `isPlayerHit` checking if the player has collided with an enemy.
+
+## 4. Menu Navigation
+- **Mechanic**: The player can navigate between different game states (e.g., main menu, shop menu, levels) using input from the keyboard.
+- **Implementation**: The `showMainMenu`, `showShopMenu`, and other state-based functions handle transitions between these game states based on player input.
+
+## 5. Level Progression
+- **Mechanic**: The player progresses through different levels, with each level having different challenges (more enemies, difficult terrain, etc.).
+- **Implementation**: The `transitionToNextLevel` function transistions the player to the next map after reaching the exit.
+
+## 6. Item Collection
+- **Mechanic**: The player can collect coins on the map, which can later be used in the shop.
+- **Implementation**: Collision detection is used to check when the player moves over a coin, triggering an event of adding currency.
+
+## 7. Resource Management
+- **Mechanic**: The player has resources like health and currency that can be increased or decreased during the game. Resources may persist between sessions.
+- **Implementation**: Health and currency are stored in the Player class, and external files (e.g., player_data.txt) save this data, ensuring the player’s progress persists.
+
+## 8. Shopping System
+- **Mechanic**: The player can purchase upgrades in the form of extra health using in-game currency at the shop. They can also unlock a new bonus stage and progress further into the game.
+- **Implementation**: The shop is implemented in the `showShopMenu()` function, where players can spend currency and improve their attributes.
+
+## 9. Event Triggers
+- **Mechanic**: Buttons in the game can trigger events like unlocking areas or transporting the player to a new map. 
+- **Implementation**: The `activateButton()` function handles button-triggered events in the game, which unlock new areas of the map. The `transitionToNextLevel` function handles triggering a map change when the player steps on the exit tile.
 
 ---
 
