@@ -153,6 +153,32 @@ Below is a simple sequence diagram illustrating the flow of the game:
 
 ## **Sample Screens**
 
+### 1. Main Menu
+The **Main Menu** is the entry point of the game where players can start a new game, access the shop, or exit the game. Here, the player navigates between different sections.
+
+![Main Menu Screen](./Game%20screenshots/main_menu.PNG)
+
+### 2. Game Screen
+The **Game Screen** is where the main gameplay happens. This screen displays the player's stats (like health and coins) and shows the current area. Enemies and interactable objects like buttons or coins are visible here.
+
+![Game Screen](./Game%20screenshots/game_screen.PNG)
+
+### 3. Shop Screen
+In the **Shop Screen**, players can purchase health upgrade or a new map. This screen shows the player’s available currency and a list of purchasable items with their prices.
+
+![Shop Screen](./Game%20screenshots/shop_screen.PNG)
+
+### 4. Level Transition Screen
+The **Level Transition Screen** is mainly just two lines of text that shows the reward for finishing the level and how to move onto the next map, this is sometimes replaced by one of the game over screens for when the player finished a level but haven't unlocked the level after that.
+
+![Level Transition Screen](./Game%20screenshots/level_transition_screen.PNG)
+
+### 5. Game Over Screen
+When the player’s health reaches zero or another failure condition is met, the **Game Over Screen** appears. This screen shows the reason for the game over screen and how to return to the main menu.
+
+![Game Over Screen](./Game%20screenshots/game_over_screen.PNG)
+![Game Over Screen1](./Game%20screenshots/game_over_screen1.PNG)
+![Game Over Screen2](./Game%20screenshots/game_over_screen2.PNG)
 
 ---
 
