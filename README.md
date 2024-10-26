@@ -296,3 +296,11 @@ The following test cases were conducted to verify correct functionality of the g
 ---
 
 ## **Evaluation**
+
+Overall, I believe the game was somewhat successful in showcasing a diverse range of techniques within the Object-Oriented Programming (OOP) paradigm. While the game itself is not overly complex, it provides dynamic gameplay that allows users to jump in and play without navigating through multiple menus. This streamlined experience enhances user engagement and enjoyment.
+
+One aspect I am particularly pleased with is the clean user interface. By capturing single user inputs for navigation rather than requiring full string responses, the game reduces the likelihood of user errors and improves accessibility. Additionally, the implementation of saving user data to a file is a strong feature, allowing players to close the game and resume from the same point during their next session.
+
+However, there are several areas I would consider improving if I were to develop the game again. One major point is the need for additional content, as the current gameplay can feel relatively fast-paced and somewhat easy to complete. Moreover, the limited options for spending coins can render coin collection less meaningful, potentially diminishing player motivation to gather them.
+
+In conclusion, while the game may lack extensive content, it offers a fast-paced and enjoyable experience for players during their initial runs. It effectively demonstrates a variety of OOP techniques and incorporates several key game mechanics commonly found in many games, making it a valuable learning experience and a fun project overall.
