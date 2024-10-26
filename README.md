@@ -35,7 +35,7 @@ Overall, the aim of the game was to be simple and quick yet fun, providing a sat
 ---
 
 ## **Video Walkthrough**
-**[Watch the Video Walkthrough]()**
+**[Watch the Video Walkthrough](https://youtu.be/le0cZ70-VxY)**
 
 This video provides an overview of the project, including:
 - Articulation of game features
