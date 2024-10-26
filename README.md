@@ -137,7 +137,7 @@ The code manages resources (such as player health, currency, and map data) throu
 - **Implementation**: The `moveEnemies` function randomly generates movement directions for enemies, adding a challenge for the player to avoid or confront.
 
 ## 3. Health Management / Damage System
-- **Mechanic**: The player has a health syustem. Colliding with enemies reduces health, and once health reaches zero, the player dies and thus the game ends, sending the user back to the main menu.
+- **Mechanic**: The player has a health system. Colliding with enemies reduces health, and once health reaches zero, the player dies and thus the game ends, sending the user back to the main menu.
 - **Implementation**: Health is managed within the `Player` class, with functions like `isPlayerHit` checking if the player has collided with an enemy.
 
 ## 4. Menu Navigation
