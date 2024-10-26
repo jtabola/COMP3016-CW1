@@ -198,6 +198,101 @@ When the player’s health reaches zero or another failure condition is met, the
 
 ## **Exception Handling and Test Cases**
 
+### **Exception Handling**
+
+This game includes various exception handling mechanisms to manage player interactions, data access, and ensure smooth gameplay.
+
+- **Input Handling**:  
+  The primary exception handling in this game responds to player input. Using the `_getch()` function, the program captures a single key press (1 character) and processes it through a switch statement. This approach reduces input errors compared to taking full strings, as players only need to press one key for each action. If the input doesn’t match a valid option, the game does nothing, helping prevent unintended actions from incorrect inputs.
+
+- **Insufficient Coins**:  
+  When the player attempts to purchase an item or upgrade, the program verifies that they have enough coins (integer) to meet the price (integer). If their balance is too low, the game displays a message indicating insufficient funds and prevents the purchase. This check ensures that player resources do not drop into negative values.
+
+- **Level Access Restriction**:  
+  When the player attempts to access the final stage (Level 4), the game checks the player's progress stored in a data file. If the level is not unlocked, the game automatically redirects the player back to the main menu with an appropriate message. This helps maintain game flow and prevents access to levels the player has not yet unlocked.
+
+- **File Loading and Missing Data Handling**:  
+  The game manages missing or corrupt data files by checking the existence and readability of files when loading player data and maps. If the player data file is missing, the game generates a new file with default values, ensuring the player can continue. Similarly, if a map file is not found, an error message is displayed, informing the player of the issue without crashing the game.
+
+- **Out-of-Bounds Movement by Player and Enemies**:
+  When the player or enemy attempts to move outside the boundaries of the map, an exception is handled to prevent invalid movement. Movement logic for both the player and enemies includes boundary checks. If a move is attempted into a wall or outside map limits, the move is blocked, and the character remains in its current position. This ensures that characters do not exit the playable map area, which maintains game stability and prevents unexpected behavior or crashes due to out-of-bounds errors.
+
+### **Test Cases**
+
+The following test cases were conducted to verify correct functionality of the game mechanics:
+
+- **Test 1: Invalid Key Press in Main Menu**  
+  **Test Data**: Keys pressed "G", "2", "."  
+  **Expected Result**: Nothing happens.  
+  **Actual Result**: Nothing happens.  
+  **Action Taken**: None  
+
+- **Test 2: Confirming Selection in Menu**  
+  **Test Data**: "Enter" pressed when selecting "Shop".  
+  **Expected Result**: Player is sent to the shop menu.  
+  **Actual Result**: Player is sent to the shop menu.  
+  **Action Taken**: None  
+
+- **Test 3: Attempt to Buy Upgrade with Insufficient Coins**  
+  **Test Data**: User has coins = 20, upgrade cost = 50.  
+  **Expected Result**: Message displays "Insufficient coins."  
+  **Actual Result**: Message displays "Insufficient coins."  
+  **Action Taken**: None  
+
+- **Test 4: Starting the Game**  
+  **Test Data**: User presses "Enter" on "Start Game".  
+  **Expected Result**: Player starts on the first map.  
+  **Actual Result**: Player starts on the first map.  
+  **Action Taken**: None  
+
+- **Test 5: Player Movement**  
+  **Test Data**: Player presses "A", "W", "S", "D".  
+  **Expected Result**: Player moves according to the key pressed.  
+  **Actual Result**: Player moves according to the key pressed.  
+  **Action Taken**: None  
+
+- **Test 6: Moving Out of Bounds**  
+  **Test Data**: Player presses "W" when below a boundary wall.  
+  **Expected Result**: Player does not move.  
+  **Actual Result**: Boundary is replaced with player symbol.  
+  **Action Taken**: Added an if-statement to prevent player movement onto boundary tiles.  
+
+- **Test 7: Coin Collection**  
+  **Test Data**: Player moves over "C" tile.  
+  **Expected Result**: "C" tile is replaced with player symbol, and coins increase.  
+  **Actual Result**: Same as expected.  
+  **Action Taken**: None  
+
+- **Test 8: Advancing to the Next Level**  
+  **Test Data**: Player moves over "X" exit tile.  
+  **Expected Result**: Player transitions to the next level and receives a reward.  
+  **Actual Result**: Player transitions to the next level and receives 20 coins (intended).  
+  **Action Taken**: None  
+
+- **Test 9: Taking Damage from Enemy**  
+  **Test Data**: Player walks into "E" enemy tile.  
+  **Expected Result**: Player takes damage and is sent back to respawn.  
+  **Actual Result**: Player moves over the "E" tile without taking damage.  
+  **Action Taken**: Added logic to check for "E" tile before moving, sending the player back to "S" spawn point when damage is taken.  
+
+- **Test 10: Game Over upon Losing All Health**  
+  **Test Data**: Player takes damage when health = 1.  
+  **Expected Result**: Game over message displays, and player is sent to the main menu.  
+  **Actual Result**: Same as expected.  
+  **Action Taken**: None  
+
+- **Test 11: Transition to Level When Not Unlocked**  
+  **Test Data**: Player tries going to level 4 without having it unlocked.  
+  **Expected Result**: Player is sent back to the main menu with a message indicating the level is locked.  
+  **Actual Result**: Player transitions to level 4 despite it being locked.  
+  **Action Taken**: Added logic to check a value stored in the file to determine if the player has access to the next level. If not, the player is sent back to the main menu.  
+
+- **Test 12: Game Over upon Completing Last Level**  
+  **Test Data**: Player completes the last level.  
+  **Expected Result**: Game over message displays, and player is presented with an option to quit.  
+  **Actual Result**: Same as expected.  
+  **Action Taken**: None 
+
 ---
 
 ## **Evaluation**
