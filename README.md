@@ -3,6 +3,7 @@
 ## **Table of Contents**
 - [Project Overview](#project-overview)
 - [Video Walkthrough](#video-walkthrough)
+- [How To Run](#how-to-run)
 - [Dependencies & Resources](#dependencies-and-resources)
 - [Game Programming Patterns Used](#game-programming-patterns-used)
 - [Game Mechanics](#game-mechanics)
@@ -39,6 +40,14 @@ Overall, the aim of the game was to be simple and quick yet fun, providing a sat
 This video provides an overview of the project, including:
 - Articulation of game features
 - A playthrough of the game
+
+---
+
+## **How To Run**
+
+1. Open the Release folder.
+2. Verify that there are 4 files labeled: map.txt, map2.txt, map3.txt and map4.txt.
+3. Double-click the Console Game executable (Console Game.exe).
 
 ---
 
